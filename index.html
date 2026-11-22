@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bigdawgz Cards AI helps sports-card collectors organize collections and prepare researched marketplace listings.">
+<title>Bigdawgz Cards AI | Turn Your Collection Into Seller-Ready Listings</title>
+<style>
+:root{--navy:#081426;--navy2:#102541;--gold:#f3bd4b;--cream:#f6f3eb;--ink:#15243a;--muted:#aebbd0;--line:#dce2ea;--white:#fff;--green:#16794b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f7f8fb;line-height:1.55}
+a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+header{background:var(--navy);color:white;border-bottom:1px solid #20344f}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.04em}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--gold),#d98d22);display:grid;place-items:center;color:#091528;font-weight:1000;font-size:20px;box-shadow:0 5px 18px #0005}
+.brand small{display:block;font-size:10px;color:var(--gold);letter-spacing:.18em}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;color:#d8e0ec}nav a{text-decoration:none}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:var(--gold);color:#101c2c;text-decoration:none;border:0;border-radius:10px;padding:13px 18px;font-weight:850;cursor:pointer}
+.btn.dark{background:var(--navy);color:white}.btn.ghost{background:transparent;border:1px solid #63738b;color:white}
+.hero{background:radial-gradient(ellipse at 80% 10%,#23446b 0,transparent 38%),linear-gradient(130deg,#071326,#102b4b);color:white;padding:76px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04;letter-spacing:-.045em;margin:16px 0 18px}
+.hero p{font-size:18px;color:#d2dceb;max-width:610px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.note{font-size:12px!important;color:#aebbd0!important;margin-top:18px}
+.visual{background:linear-gradient(145deg,#1b3657,#0a172a);border:1px solid #35506e;border-radius:24px;padding:22px;box-shadow:0 24px 70px #0006;transform:rotate(1deg)}
+.visual-top{display:flex;justify-content:space-between;color:#dbe5f2;font-size:12px;margin-bottom:18px}
+.card-mock{border-radius:17px;background:linear-gradient(145deg,#f8e9c7,#d5a34d);color:#18283b;padding:18px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.card-mock:after{content:"";position:absolute;width:210px;height:210px;border:2px solid #ffffff80;border-radius:50%;right:-55px;top:20px;box-shadow:0 0 0 16px #ffffff25,0 0 0 34px #ffffff18}
+.card-label{font-size:10px;letter-spacing:.17em;font-weight:900}.player{font-size:27px;font-weight:1000;line-height:1.05;max-width:180px}.card-foot{font-size:11px;font-weight:800;letter-spacing:.12em}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}.metric{border:1px solid #38516d;border-radius:12px;padding:12px;color:#d9e4f1}.metric b{display:block;color:var(--gold);font-size:17px}.metric span{font-size:10px}
+section{padding:66px 0}.section-head{max-width:690px;margin-bottom:30px}.section-head h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.035em;line-height:1.1;margin:8px 0 12px}.section-head p{color:#627086;margin:0}
+.kicker{font-size:11px;color:#a36a13;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:white;border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:0 8px 24px #10254108}
+.icon{width:42px;height:42px;border-radius:12px;background:#fff3d9;color:#9a6512;display:grid;place-items:center;font-size:20px;margin-bottom:15px}
+.card h3{margin:0 0 8px;font-size:18px}.card p{color:#66758a;font-size:14px;margin:0}
+.pricing{grid-template-columns:repeat(4,1fr)}
+.price-card{position:relative}.price{font-size:34px;font-weight:950;letter-spacing:-.04em;margin:10px 0}.price small{font-size:12px;color:#778397;font-weight:600;letter-spacing:0}
+.price-card ul{padding-left:18px;color:#5f6d80;font-size:13px;min-height:112px}.price-card li{margin:7px 0}.featured{border:2px solid var(--gold);box-shadow:0 12px 32px #d49a301a}.tag{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:#8a5b0e;background:#fff2d2;padding:5px 8px;border-radius:99px;display:inline-block}
+.process{background:var(--navy);color:white}.process .section-head p{color:#bac8da}.process .kicker{color:var(--gold)}.process .card{background:#102541;border-color:#2b4565;color:white}.process .card p{color:#b9c8d9}.process .icon{background:#273e5c;color:var(--gold)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.formbox{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 35px #1025410c}
+label{display:block;font-size:13px;font-weight:800;margin:14px 0 6px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd4df;border-radius:9px;font:inherit;background:#fff;color:var(--ink)}textarea{min-height:95px;resize:vertical}
+.formbox .btn{width:100%;margin-top:16px}
+.small{font-size:12px;color:#718096}.notice{background:#fff7e5;border:1px solid #f1d79e;border-radius:12px;padding:13px;color:#6d511d;font-size:12px;margin-top:14px}
+footer{background:#061020;color:#d5dfec;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-row p{font-size:12px;color:#99a9bd;max-width:620px}
+.faq details{background:white;border:1px solid var(--line);padding:16px 18px;border-radius:12px;margin:9px 0}.faq summary{font-weight:850;cursor:pointer}.faq p{font-size:14px;color:#627086}
+#status{margin-top:12px;font-size:13px;color:var(--green);font-weight:750;min-height:20px}
+@media(max-width:850px){.hero-grid,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr 1fr}.visual{max-width:520px}.hero{padding:56px 0}}
+@media(max-width:560px){nav{display:none}.grid,.pricing{grid-template-columns:1fr}.nav{height:64px}.hero p{font-size:16px}.metric span{font-size:9px}section{padding:50px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+ <a class="brand" href="#" style="text-decoration:none"><span class="mark">B</span><span>BIGDAWGZ<small>CARDS AI</small></span></a>
+ <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
+ <a class="btn" href="#start">Get started</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+ <div><div class="eyebrow">For collectors • Built for sellers</div>
+ <h1>Your cards.<br><span style="color:var(--gold)">Organized.</span><br>Ready to list.</h1>
+ <p>Bigdawgz Cards AI helps sports-card collectors organize their collections, research comparable sales, and prepare clear marketplace listings—without spending hours writing them one by one.</p>
+ <div class="hero-actions"><a class="btn" href="#start">Request a quote →</a><a class="btn ghost" href="#pricing">View packages</a></div>
+ <p class="note">You keep your cards. We work from photos and information you provide. We do not buy collections or guarantee resale prices.</p></div>
+ <div class="visual"><div class="visual-top"><b>BIGDAWGZ • SELLER WORKFLOW</b><span>01 / 03</span></div>
+  <div class="card-mock"><div class="card-label">COLLECT • ORGANIZE • LIST</div><div class="player">YOUR NEXT<br>GREAT LISTING</div><div class="card-foot">SPORTS CARD INVENTORY / DIGITAL SERVICE</div></div>
+  <div class="metrics"><div class="metric"><b>01</b><span>IDENTIFY</span></div><div class="metric"><b>02</b><span>RESEARCH</span></div><div class="metric"><b>03</b><span>PREPARE</span></div></div>
+ </div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="kicker">What we do</div><h2>Turn a card backlog into a seller-ready plan.</h2><p>We combine AI-assisted drafting with human review. Every card is checked against the information visible in the photos; uncertain details are flagged instead of guessed.</p></div>
+ <div class="grid">
+  <div class="card"><div class="icon">⌕</div><h3>Card identification</h3><p>Record visible player, team, year, brand, set, card number and notable features. Unclear details are marked for confirmation.</p></div>
+  <div class="card"><div class="icon">↗</div><h3>Sold-comparable research</h3><p>Research relevant sold listings where reliable data is available. Sold prices are separated from active asking prices.</p></div>
+  <div class="card"><div class="icon">▤</div><h3>Inventory spreadsheets</h3><p>Receive a structured inventory with card details, notes, research links and suggested next steps.</p></div>
+  <div class="card"><div class="icon">✎</div><h3>Listing titles & copy</h3><p>Get readable marketplace titles and accurate descriptions prepared for your review and editing.</p></div>
+  <div class="card"><div class="icon">◎</div><h3>Collection organization</h3><p>Group cards by sport, player, team, set or other agreed categories to make your collection easier to manage.</p></div>
+  <div class="card"><div class="icon">✓</div><h3>Quality review</h3><p>We flag missing photos, uncertain parallels, condition questions and details that need owner confirmation.</p></div>
+ </div></div></section>
+<section id="pricing" style="background:#eef1f5"><div class="wrap"><div class="section-head"><div class="kicker">Simple introductory packages</div><h2>Choose a starting point.</h2><p>Final scope and delivery timing are confirmed before payment. Large or unusual collections may need a custom quote.</p></div>
+ <div class="grid pricing">
+  <div class="card price-card"><h3>Starter</h3><div class="price">$49</div><p class="small">Up to 25 cards</p><ul><li>Basic inventory</li><li>Draft listing titles</li><li>Identification notes</li><li>Basic pricing research</li></ul><a class="btn dark" href="#start" data-package="Starter — $49">Choose Starter</a></div>
+  <div class="card price-card featured"><span class="tag">Popular</span><h3>Seller Pack</h3><div class="price">$149</div><p class="small">Up to 100 cards</p><ul><li>Organized inventory</li><li>Draft titles & descriptions</li><li>Comparable-sales research</li><li>Review flags</li></ul><a class="btn" href="#start" data-package="Seller Pack — $149">Choose Seller Pack</a></div>
+  <div class="card price-card"><h3>Collection</h3><div class="price">$299</div><p class="small">Up to 250 cards</p><ul><li>Everything in Seller Pack</li><li>Collection grouping</li><li>Expanded research</li><li>Collection summary</li></ul><a class="btn dark" href="#start" data-package="Collection — $299">Choose Collection</a></div>
+  <div class="card price-card"><h3>Large Collection</h3><div class="price">$599</div><p class="small">Up to 500 cards</p><ul><li>Everything in Collection</li><li>Bulk inventory preparation</li><li>Priority scheduling by agreement</li><li>Custom handoff summary</li></ul><a class="btn dark" href="#start" data-package="Large Collection — $599">Request Large Pack</a></div>
+ </div><p class="small" style="margin-top:16px">Introductory prices are subject to confirmation and may change. No grading, authentication, guaranteed valuation, or guaranteed sale is included.</p>
+</div></section>
+<section class="process" id="how"><div class="wrap"><div class="section-head"><div class="kicker">How it works</div><h2>Three steps. You stay in control.</h2><p>You keep possession of your cards and make every final pricing and selling decision.</p></div>
+ <div class="grid">
+  <div class="card"><div class="icon">1</div><h3>Tell us about your cards</h3><p>Send an inquiry with your sport, approximate quantity and a few sample photos after we confirm the project scope.</p></div>
+  <div class="card"><div class="icon">2</div><h3>We prepare your files</h3><p>We organize the details, research available sold comps and draft marketplace copy for your review.</p></div>
+  <div class="card"><div class="icon">3</div><h3>Review and receive</h3><p>You receive your agreed deliverables, check the details and decide what to list. We do not publish or sell on your behalf.</p></div>
+ </div></div></section>
+<section id="start"><div class="wrap two">
+ <div><div class="kicker">Start a project</div><h2 style="font-size:38px;line-height:1.1;letter-spacing:-.04em">Tell us what you're working with.</h2><p style="color:#64748b">Complete this inquiry and copy the prepared message. This starter website does not transmit or store your information; it prepares a message for you to send through your chosen contact channel.</p>
+  <div class="notice"><b>Before accepting payment:</b> Confirm the final card count, photo quality, deliverables, turnaround time and refund terms in writing. Do not send payment until the provider has confirmed availability and a delivery date.</div>
+  <p class="small">For privacy, don't include account passwords, payment-card details, home addresses, or sensitive personal information in your inquiry.</p>
+ </div>
+ <form class="formbox" id="inquiry">
+  <h3 style="margin:0">Request a quote</h3>
+  <label for="name">Your name</label><input id="name" name="name" required maxlength="80" placeholder="Name">
+  <label for="email">Email address</label><input id="email" name="email" type="email" required maxlength="120" placeholder="you@example.com">
+  <label for="sport">Sport</label><select id="sport" name="sport"><option>Football</option><option>Baseball</option><option>Basketball</option><option>Hockey</option><option>Soccer</option><option>Mixed collection</option><option>Other</option></select>
+  <label for="quantity">Approximate number of cards</label><select id="quantity" name="quantity"><option>1–25</option><option>26–100</option><option>101–250</option><option>251–500</option><option>More than 500</option><option>Not sure</option></select>
+  <label for="package">Package of interest</label><select id="package" name="package"><option>Not sure — recommend one</option><option>Starter — $49</option><option>Seller Pack — $149</option><option>Collection — $299</option><option>Large Collection — $599</option><option>Custom quote</option></select>
+  <label for="details">What would you like help with?</label><textarea id="details" name="details" maxlength="1000" placeholder="Tell us about your collection, goals, and any deadlines."></textarea>
+  <button class="btn" type="submit">Prepare my inquiry →</button>
+  <div id="status" role="status" aria-live="polite"></div>
+  <p class="small">No upload or payment is processed on this demo site. After confirming the project, the provider will share a secure photo-submission and payment method.</p>
+ </form>
+</div></section>
+<section id="faq" style="background:#eef1f5"><div class="wrap"><div class="section-head"><div class="kicker">Questions</div><h2>Good to know before you start.</h2></div>
+ <div class="faq">
+  <details><summary>Do I have to mail you my cards?</summary><p>No. The service is designed to work from clear photographs and information you provide. You retain possession of your cards.</p></details>
+  <details><summary>Do you guarantee card values or sales?</summary><p>No. Research is informational, comparable sales may be limited, and market prices change. We do not guarantee value, sale price, profit or a sale.</p></details>
+  <details><summary>Do you grade or authenticate cards?</summary><p>No. We do not provide professional grading or authentication. We can flag visible features that may deserve further review.</p></details>
+  <details><summary>Will you publish listings on my eBay account?</summary><p>No. The service prepares draft listing information and inventory files. You review, edit and publish listings yourself.</p></details>
+  <details><summary>How long does an order take?</summary><p>Timing depends on quantity, image quality and research complexity. A delivery estimate is confirmed in writing before payment.</p></details>
+ </div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><div class="brand"><span class="mark">B</span><span>BIGDAWGZ<small>CARDS AI</small></span></div><p>Independent sports-card organization and listing-preparation service. Not affiliated with eBay, card manufacturers, leagues, teams or grading companies.</p></div><div class="small">© <span id="year"></span> Bigdawgz Cards AI<br>Built for collectors who want to get organized.</div></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-package]').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('package').value=btn.dataset.package;}));
+document.getElementById('inquiry').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const f=new FormData(e.currentTarget);
+ const msg=[
+ 'BIGDAWGZ CARDS AI — PROJECT INQUIRY',
+ 'Name: '+f.get('name'),'Email: '+f.get('email'),'Sport: '+f.get('sport'),
+ 'Approximate card count: '+f.get('quantity'),'Package: '+f.get('package'),
+ 'Project details: '+(f.get('details')||'Not provided')
+ ].join('\n');
+ try{await navigator.clipboard.writeText(msg);document.getElementById('status').textContent='Inquiry copied. Paste it into your email or messaging app to send.';}
+ catch(err){const area=document.createElement('textarea');area.value=msg;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();document.getElementById('status').textContent='Inquiry prepared. Paste it into your email or messaging app to send.';}
+});
+</script>
+</body></html>
